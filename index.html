@@ -15,15 +15,11 @@
       }
 
       .thumbnail {
-        width: 300px;
-        display: block;
+        width: 100%;
       }
 
       .search-bar {
-        font-size: large;
         display: block;
-        margin-bottom: 15px;
-        margin-left: 150px;
       }
 
       .video-title {
@@ -32,30 +28,11 @@
         font-weight: 500;
         line-height: 20px;
         margin-bottom: 12px;
-        /* causes a long title to be displayed partially */
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 2;
-        overflow: hidden;
-        text-overflow: ellipsis;;
       }
 
-      .video-preview {
-        width: 300px;
-        display: inline-block;
-        vertical-align: top;
-        margin-right: 15px;
-      }
-
-      .channel-picture {
-        display: inline-block;
-        width: 50px;
-        vertical-align: top;
-      }
-
-      .video-info {
-        display: inline-block;
-        width: 200px;
+      .video-info-grid {
+        display: grid;
+        grid-template-columns: 50px 1fr;
       }
 
       .profile-picture {
@@ -76,53 +53,148 @@
       .video-author {
         margin-bottom: 4px;
       }
+
+      .video-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 16px;
+        row-gap: 40px;
+      }
     </style>
   </head>
   <body>
     <input class="search-bar" type="text" placeholder="Search">
 
-    <div class="video-preview">
-      <div class="thumbnail-row">
-        <img class="thumbnail" src="thumbnails/math olympiad.webp">
-      </div>
-      <div>
-        <div class="channel-picture">
-          <img class="profile-picture" src="thumbnails/mathChannel.jpg">
+    <div class="video-grid">
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/mathThumbnail.webp">
         </div>
-        <div class="video-info">
-          <p class="video-title">
-            Math Olympiad Question | Nice Algebra Equation | You should know this trick!!
-          </p>
-          <p class="video-author">
-            LKlogic
-          </p>
-          <p class="video-stats">
-            3.4M views &#183; 6 months ago
-          </p>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="thumbnails/mathChannel.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Math Olympiad Question | Nice Algebra Equation | You should know this trick!!
+            </p>
+            <p class="video-author">
+              LKlogic
+            </p>
+            <p class="video-stats">
+              3.4M views &#183; 6 months ago
+            </p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="video-preview">
-      <div class="thumbnail-row">
-        <img class="thumbnail" src="thumbnails/rainThumbnail.webp">
-      </div>
-      <div>
-        <div class="channel-picture">
-          <img class="profile-picture" src="thumbnails/rainProfile.jpg">
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/rainThumbnail.webp">
         </div>
-        <div class="video-info">
-          <p class="video-title">
-            Rain & Thunderstorm Sounds | Rainstorm with Lightning Thunder for Sleeping, Focus and Relaxation
-          </p>
-          <p class="video-author">
-            New Bliss
-            
-           
-          </p>
-          <p class="video-stats">
-            1.7M views &#183;  2 years ago
-          </p>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="thumbnails/rainProfile.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Rain & Thunderstorm Sounds | Rainstorm with Lightning Thunder for Sleeping, Focus and Relaxation
+            </p>
+            <p class="video-author">
+              New Bliss
+            </p>
+            <p class="video-stats">
+              1.7M views &#183;  2 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/suchThumbnail.webp">
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="thumbnails/suckProfile.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              I suck at this! Codeforces Round 856 Screencast
+            </p>
+            <p class="video-author">
+              Mike the Coder 
+            </p>
+            <p class="video-stats">
+              12M views &#183; 1 year ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/JSThumbnail.webp">
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="thumbnails/JSProfile.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              How JavaScript Works ?? & Execution Context | JavaScript Labs #1 | Tech Creators  
+            </p>
+            <p class="video-author">
+              TechCreators 
+            </p>
+            <p class="video-stats">
+              18M views &#183; 4 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/legsThumbnail.webp">
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="thumbnails/legsProfile.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              The Wrestler With No Legs | BORN DIFFERENT  
+            </p>
+            <p class="video-author">
+              truly 
+            </p>
+            <p class="video-stats">
+              519K views &#183; 5 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/StopThumbnail.webp">
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="thumbnails/stopProfile.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Study SMARTER, Not Harder | Study Tips Jim Kwik 
+            </p>
+            <p class="video-author">
+              Jim Kwik 
+            </p>
+            <p class="video-stats">
+              141M views &#183; 1 year ago
+            </p>
+          </div>
         </div>
       </div>
     </div>
